@@ -2,7 +2,7 @@ Program Pascal;
 
 var saludar : string;
 begin
-    saludar := 'Hola, como estas';
+    saludar := 'Hola';
 
     writeln(saludar)
 end.
