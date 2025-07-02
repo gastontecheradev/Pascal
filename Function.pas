@@ -19,5 +19,6 @@ begin
     tum := 0;
     num := 1;
     proc(tum, num, temp);
-    writeLn(temp)
+    writeLn(temp);
+    readLn
 end.
