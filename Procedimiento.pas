@@ -1,13 +1,21 @@
 Program Procedimiento;
+var
+    primero, segundo, tercero: Integer;
 
 Procedure corrimiento(a, b, c: Integer);
 begin
-    writeln(c, a, b)
+    primero := c;
+    segundo := a;
+    tercero := b;
 end;
 
 { Programa principal }
 begin
-    corrimiento(4, 1, 7);
+    writeln('Ingrese tres números');
+    readln(primero, segundo, tercero);
+
+    corrimiento(primero, segundo, tercero);
+
+    writeln(primero, segundo, tercero);
     readln
 end.
-
