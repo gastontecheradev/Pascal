@@ -2,11 +2,13 @@ Program Procedimiento;
 var
     primero, segundo, tercero: Integer;
 
-Procedure corrimiento(a, b, c: Integer);
+Procedure corrimiento(var a, b, c: Integer);
+var temp: Integer;
 begin
-    primero := c;
-    segundo := a;
-    tercero := b;
+    temp := a;
+    a := b;
+    b := c;
+    c := temp;
 end;
 
 { Programa principal }
