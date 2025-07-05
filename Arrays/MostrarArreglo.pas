@@ -11,8 +11,6 @@ begin
         read(a[i]);
 
     for i:= 1 to N do
-    begin
-        writeln(a[i]);
-    end;
-    readln;
+        write(a[i], ' ');
+    readln
 end.
