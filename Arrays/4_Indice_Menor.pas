@@ -13,7 +13,7 @@ for i:= 1 to N do
 menor:= a[1];
 indice:= 1;
 
-for i:= 1 to N do
+for i:= 2 to N do
     if a[i] < menor then
     begin
         menor:= a[i];
