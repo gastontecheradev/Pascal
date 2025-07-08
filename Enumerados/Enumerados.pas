@@ -1,8 +1,16 @@
 Program Enumerados;
 
-type direccion = (norte, sur);
-
+type
+    Semaforo = (rojo, amarillo, verde);
+var
+    luz: Semaforo;
 begin
-    writeln(succ(norte));
-    readln
+    write('Ingrese uno de los siguientes: rojo, amarillo, verde');
+    read(luz);
+
+    case luz of
+        rojo: writeln('Detenerse');
+        amarillo: writeln('Precaución');
+        verde: writeln('Avanzar');
+    end;
 end.
